@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (toggleSwitch) {
       toggleSwitch.addEventListener('change', function() {
         this.checked ? document.getElementById("resume_dl").href = "./Ismael-HADJ-resume-FR.pdf" : document.getElementById("resume_dl").href = "./Ismael-HADJ-resume-EN.pdf"
-        console.log(document.getElementById("resume_dl").href)
+        this.checked ? document.getElementById("recommandation_letter_1").href = "./recommandation_letter_fr.pdf" : document.getElementById("recommandation_letter_1").href = "./추천서_이스마엘.pdf"
+        console.log(document.getElementById("recommandation_letter_1").href)
         changeLanguage(this.checked ? 'fr' : 'en');
       });
     } else {
