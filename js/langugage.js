@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
-    const initialLang = toggleSwitch.checked ? 'fr' : 'en';
+    const initialLang = toggleSwitch.checked ? 'FR' : 'EN';
   
     function loadTranslations(lang) {
       fetch(`/language/${lang}.json`)
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         this.checked ? document.getElementById("recommandation_letter_1").href = "./recommandation_letter_fr.pdf" : document.getElementById("recommandation_letter_1").href = "./추천서_이스마엘.pdf"
         this.checked ? document.getElementById("recommandation_letter_EPS").href = "./Ismael_Hadj_EPS_recommandation_letter.pdf" : document.getElementById("recommandation_letter_EPS").href = "./추전서_EPS_엔지니어링.pdf"
         console.log(document.getElementById("recommandation_letter_1").href)
-        changeLanguage(this.checked ? 'fr' : 'en');
+        changeLanguage(this.checked ? 'FR' : 'EN');
       });
     } else {
       console.log('Le bouton toggle n\'a pas été trouvé dans le DOM');
