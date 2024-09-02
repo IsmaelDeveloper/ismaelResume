@@ -44,18 +44,22 @@
 	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li class="current"><a class="smoothscroll" href="#home" data-key="navigation1">Home</a></li>
+            <li><a class="smoothscroll" href="#about" ata-key="navigation2">About</a></li>
+	         <li><a class="smoothscroll" href="#resume" ata-key="navigation3">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio" ata-key="navigation4">Works</a></li>
+            <li class="language_li">EN<label class="switch">
+               <input type="checkbox" checked>
+               <span class="slider round"></span>
+             </label>FR</li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">I'm Ismael Hadj</h1>
-            <h3>I'm a Seoul based <span>IT engineer</span>,  creating awesome and effective website and mobile application for companies. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            <h1 class="responsive-headline"  data-key="headline">I'm Ismael Hadj</h1>
+            <h3 data-key="intro">I'm a Seoul based <span>IT engineer</span>,  creating awesome and effective website and mobile application for companies. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
@@ -86,9 +90,9 @@
 
          <div class="nine columns main-col">
 
-            <h2>About Me</h2>
+            <h2 data-key="aboutTitle">About Me</h2>
 
-            <p>Hi! I'm Ismael Hadj, a IT engineer living in Seoul, South Korea. I have a passion for web development and mobile application. I have a strong background in web development and mobile development application.
+            <p data-key="aboutContent">Hi! I'm Ismael Hadj, a IT engineer living in Seoul, South Korea. I have a passion for web development and mobile application. I have a strong background in web development and mobile development application.
                I use to learn new technologies and I am always looking for new challenges. I am a fast learner and I am able to work under pressure. I am a team player and I am able to work alone.
             </p>
 
@@ -96,7 +100,7 @@
 
                <div class="columns contact-details">
 
-                  <h2>Contact Details</h2>
+                  <h2 data-key="contactTitle">Contact Details</h2>
                   <p class="address">
 						   <span>Ismael Hadj</span><br>
 						   <span>서울특별시, 면목동 382-35 
@@ -109,9 +113,9 @@
 
                <div class="columns download">
                   <p>
-                     <a href="./ismael_HADJ_Resume_EN.pdf" download="resume_Ismael_HADJ.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                     <a href="./추천서_이스마엘.pdf" download="추천서_이스마엘.pdf" class="button"><i class="fa fa-download"></i>Download recommandation letter</a>
-                     <a href="./추전서_EPS_엔지니어링.pdf" download="추천서_이스마엘_EPS.pdf" class="button"><i class="fa fa-download"></i>Download second recommandation letter</a>
+                     <a id="resume_dl" href="./Ismael-HADJ-resume-FR.pdf" download="resume_Ismael_HADJ.pdf" class="button"><i class="fa fa-download" data-key="downloadResume"></i>Download Resume</a>
+                     <a href="./추천서_이스마엘.pdf" download="추천서_이스마엘.pdf" class="button"><i class="fa fa-download" data-key="downloadRecommendation"></i>Download recommandation letter</a>
+                     <a href="./추전서_EPS_엔지니어링.pdf" download="추천서_이스마엘_EPS.pdf" class="button"><i class="fa fa-download" data-key="downloadSecondRecommendation"></i>Download second recommandation letter</a>
                   </p>
                </div>
 
@@ -133,7 +137,7 @@
       <div class="row education">
 
          <div class="three columns header-col">
-            <h1><span>Education</span></h1>
+            <h1><span data-key="educationTitle">Education</span></h1>
          </div>
 
          <div class="nine columns main-col">
@@ -142,10 +146,10 @@
 
                <div class="twelve columns">
 
-                  <h3>Master and bachelor degree in computer science</h3>
-                  <p class="info">Ynov Campus  <span>&bull;</span> <em class="date">2015-2020</em></p>
+                  <h3 data-key="educationDegree1">Master and bachelor degree in computer science</h3>
+                  <p class="info" data-key="educationSchool1">Ynov Campus  <span>&bull;</span> <em class="date">2015-2020</em></p>
 
-                  <p>
+                  <p data-key="educationDetails1">
                 Master and bachelor degree where I majored computer science with specialisation in web and mobile application development
                   </p>
 
@@ -157,10 +161,10 @@
 
                <div class="twelve columns">
 
-                  <h3>High school degree</h3>
-                  <p class="info">VAUVENARGUES HIGH-SCHOOL <span>&bull;</span> <em class="date">2012-2015</em></p>
+                  <h3 data-key="highSchoolDegree">High school degree</h3>
+                  <p class="info" data-key="highSchoolName">VAUVENARGUES HIGH-SCHOOL <span>&bull;</span> <em class="date">2012-2015</em></p>
 
-                  <p>
+                  <p data-key="highSchoolDetails">
                      Study on IT class. Obtention of degree with special mention.
                   </p>
 
@@ -178,7 +182,7 @@
       <div class="row work">
 
          <div class="three columns header-col">
-            <h1><span>Work</span></h1>
+            <h1><span data-key="workTitle">Work</span></h1>
          </div>
 
          <div class="nine columns main-col">
@@ -187,10 +191,10 @@
 
                <div class="twelve columns">
 
-                  <h3>Web Developer in Seoul</h3>
-                  <p class="info">SOLAND <span>&bull;</span> <em class="date">2023 - Present</em></p>
+                  <h3 data-key="work1Title">Web Developer in Seoul</h3>
+                  <p class="info" data-key="work1Company">SOLAND <span>&bull;</span> <em class="date">2023 - Present</em></p>
 
-                  <p>
+                  <p data-key="work1Details">
                      As a Web Developer, I have autonomously managed complex front-end API projects and developed metaverse environments. I have extensive experience with video call systems using native WebRTC and modifying Jitsi Meet. My work consistently enhances project outcomes and user experiences.
                   </p>
 
@@ -203,10 +207,10 @@
 
                <div class="twelve columns">
 
-                  <h3>React/Flutter/Java Spring boot developper in Seoul</h3>
-                  <p class="info">XENOIMPACT <span>&bull;</span> <em class="date">2021 - Present</em></p>
+                  <h3 data-key="work2Title">React/Flutter/Java Spring boot developper in Seoul</h3>
+                  <p class="info" data-key="work2Company">XENOIMPACT <span>&bull;</span> <em class="date">2021 - 2023</em></p>
 
-                  <p>
+                  <p data-key="work2Details">
                      Working on social network mobile app and his admin website using Flutter React and Java Spring boot. In charge of the admin website and his architecture.
                   </p>
 
@@ -218,10 +222,10 @@
 
                <div class="twelve columns">
 
-                  <h3>Web Developer in Seoul</h3>
-                  <p class="info">Louis picture <span>&bull;</span> <em class="date">2021 - 2021</em></p>
+                  <h3 data-key="work3Title">Web Developer in Seoul</h3>
+                  <p class="info" data-key="work3Company">Louis picture <span>&bull;</span> <em class="date">2021 - 2021</em></p>
 
-                  <p>Work on a website for a company in Seoul, Korea
+                  <p data-key="work3Details">Work on a website for a company in Seoul, Korea
                   </p>
 
                </div>
@@ -232,10 +236,10 @@
 
                <div class="twelve columns">
 
-                  <h3>Freelance in IT</h3>
-                  <p class="info"> <span>&bull;</span> <em class="date">2018 - 2022</em></p>
+                  <h3 data-key="work4Title">Freelance in IT</h3>
+                  <p class="info" data-key="work4Duration"> <span>&bull;</span> <em class="date">2018 - 2022</em></p>
 
-                  <p>Creation of website for customers based in France using Wordpress, PHP with Symfony, Angular etc...
+                  <p data-key="work4Details">Creation of website for customers based in France using Wordpress, PHP with Symfony, Angular etc...
                   </p>
 
                </div>
@@ -246,10 +250,10 @@
 
                <div class="twelve columns">
 
-                  <h3>Web developper</h3>
-                  <p class="info">GFI<span>&bull;</span> <em class="date">2019 - 2020</em></p>
+                  <h3 data-key="work5Title">Web developper</h3>
+                  <p class="info" data-key="work5Company">GFI<span>&bull;</span> <em class="date">2019 - 2020</em></p>
 
-                  <p>Worked on the official website of the Marseille metropolis with Symfony framework.
+                  <p work5Details>Worked on the official website of the Marseille metropolis with Symfony framework.
                   </p>
 
                </div>
@@ -260,10 +264,10 @@
 
                <div class="twelve columns">
 
-                  <h3>ERP developper</h3>
-                  <p class="info">Absys-Cyborg<span>&bull;</span> <em class="date">2018 - 2019</em></p>
+                  <h3 data-key="work6Title">ERP developper</h3>
+                  <p class="info" data-key="work6Company">Absys-Cyborg<span>&bull;</span> <em class="date">2018 - 2019</em></p>
 
-                  <p>Worked on a software edited by Microsoft for big company. Maintenance and charged to create new functionality.
+                  <p data-key="work6Details">Worked on a software edited by Microsoft for big company. Maintenance and charged to create new functionality.
                   </p>
 
                </div>
@@ -274,10 +278,10 @@
 
                <div class="twelve columns">
 
-                  <h3>Web Developer</h3>
-                  <p class="info">XYVERTICAL<span>&bull;</span> <em class="date">2017 - 2018</em></p>
+                  <h3 data-key="work7Title">Web Developer</h3>
+                  <p class="info" data-key="work7Company">XYVERTICAL<span>&bull;</span> <em class="date">2017 - 2018</em></p>
 
-                  <p>Creation of a framework for a new expense report software.
+                  <p data-key="work7Details">Creation of a framework for a new expense report software.
                   </p>
 
                </div>
@@ -296,12 +300,12 @@
       <div class="row skill">
 
          <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span data-key="skillsTitle">Skills</span></h1>
          </div>
 
          <div class="nine columns main-col">
 
-            <p>While working on different projects, I have acquired a lot of skills in different fields. Here is a list of the most important ones. Of course, I am always learning new things and I am open to new challenges.
+            <p data-key="skillsDetails">While working on different projects, I have acquired a lot of skills in different fields. Here is a list of the most important ones. Of course, I am always learning new things and I am open to new challenges.
             </p>
 
 				<div class="bars">
@@ -313,7 +317,7 @@
 						<li><span class="bar-expand full"></span><em>HTML/CSS</em></li>
 						<li><span class="bar-expand full"></span><em>TAILWIND</em></li>
 						<li><span class="bar-expand semiFull"></span><em>ANGULAR</em></li>
-                  <li><span class="bar-expand semiFull"></span><em>Other frameworks...</em></li>
+                  <li><span class="bar-expand semiFull"></span><em data-key="otherFramework">Other frameworks...</em></li>
 					</ul>
 
 				</div><!-- end skill-bars -->
@@ -333,7 +337,7 @@
 
          <div class="twelve columns collapsed">
 
-            <h1>Check Out Some of My Works.</h1>
+            <h1 data-key="portfolioTitle">Check Out Some of My Works.</h1>
 
             <!-- portfolio-wrapper -->
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -345,7 +349,7 @@
                         <img alt="" src="images/portfolio/login.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>Login page</h5>
+          					      <h5 data-key="portfolio1">Login page</h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -361,7 +365,7 @@
                         <img alt="" src="images/home.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>Home page in 아임펫뿜뿜 application</h5>
+          					      <h5 data-key="portfolio2">Home page in 아임펫뿜뿜 application</h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -377,7 +381,7 @@
                         <img alt="" src="images/dailyMission.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>dailyMission in 아임펫뿜뿜 application</h5>
+          					      <h5 data-key="portfolio3">dailyMission in 아임펫뿜뿜 application</h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -393,7 +397,7 @@
                         <img alt="" src="images/profil.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>Profil screen in 아임펫뿜뿜 application </h5>
+          					      <h5 data-key="portfolio4">Profil screen in 아임펫뿜뿜 application </h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -409,7 +413,7 @@
                         <img alt=""  src="images/announcement.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>Notice list in application admin website</h5>
+          					      <h5 data-key="portfolio5">Notice list in application admin website</h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -426,7 +430,7 @@
                         <img alt="" src="images/announcementForm.jpg">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>Notice form in application admin website</h5>
+          					      <h5 data-key="portfolio6">Notice form in application admin website</h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -442,7 +446,7 @@
                         <img alt="" src="images/print.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>List of product which should be send on admin website</h5>
+          					      <h5 data-key="portfolio7">List of product which should be send on admin website</h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -458,7 +462,7 @@
                         <img alt="" src="images/product.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-          					      <h5>List of product available in the app</h5>
+          					      <h5 data-key="portfolio8">List of product available in the app</h5>
           					   </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
@@ -480,12 +484,12 @@
 		      <img class="scale-with-grid" src="images/portfolio/login.jpg" alt="" />
 
 		      <div class="description-box">
-			      <h4>login screen</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio1">login screen</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-01 End -->
@@ -495,12 +499,12 @@
 		      <img class="scale-with-grid" src="images/home.jpg" alt="" />
 
 		      <div class="description-box">
-			      <h4>Home page in 아임펫뿜뿜 application</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio2">Home page in 아임펫뿜뿜 application</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-02 End -->
@@ -510,12 +514,12 @@
 		      <img class="scale-with-grid" src="images/dailyMission.jpg" alt="" />
 
 		      <div class="description-box">
-			      <h4>dailyMission screen in 아임펫뿜뿜 application</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio3">dailyMission screen in 아임펫뿜뿜 application</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-03 End -->
@@ -525,12 +529,12 @@
 		      <img class="scale-with-grid" src="images/profil.jpg" alt="" />
 
 		      <div class="description-box">
-			      <h4>Profil screen in 아임펫뿜뿜 application</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio4">Profil screen in 아임펫뿜뿜 application</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-04 End -->
@@ -540,12 +544,12 @@
 		      <img class="scale-with-grid" src="images/announcement.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>Notice list in application admin website</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio5">Notice list in application admin website</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-05 End -->
@@ -555,12 +559,12 @@
 		      <img class="scale-with-grid" src="images/announcementForm.jpg" alt="" />
 
 		      <div class="description-box">
-			      <h4>Notice form in application admin website</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio6">Notice form in application admin website</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-06 End -->
@@ -570,12 +574,12 @@
 		      <img class="scale-with-grid" src="images/print.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>List of product which should be send on admin website</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio7">List of product which should be send on admin website</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-07 End -->
@@ -585,12 +589,12 @@
 		      <img class="scale-with-grid" src="images/product.png" alt="" />
 
 		      <div class="description-box">
-			      <h4>List of product available in the app</h4>
-               <span class="categories"><i class="fa fa-tag"></i>Development, frontend, backend</span>
+			      <h4 data-key="portfolio8">List of product available in the app</h4>
+               <span class="categories" data-key="categorie"><i class="fa fa-tag"></i>Development, frontend, backend</span>
 		      </div>
 
             <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
+		         <a class="popup-modal-dismiss" data-key="close">Close</a>
             </div>
 
 	      </div><!-- modal-01 End -->
@@ -612,7 +616,7 @@
 
             <div class="two columns header-col">
 
-               <h1><span>Testimonials</span></h1>
+               <h1><span data-key="testimonialsTitle">Testimonials</span></h1>
 
             </div>
 
@@ -624,7 +628,8 @@
 
                      <li>
                         <blockquote>
-                           <p>[추천사유] <br>
+                           <p data-key="testimonialContentTitle">[추천사유] </p>
+                           <p data-key="testimonial1">
                                추천대상자는 사내의 신규 사업인 아임펫폼폼의 프론트 개발자로서 앱과 됩의 개발을 성실히 담당하였습니 다. 화면 설계와 디자이너가 배정되지 않은 상태에서도 능동적으로 프로젝트를 선 진행하여 차질없이 업무 를 완수하였으며 수정 요구사항에 대해서도 긍정적이며 빠른 피드백으로 문제를 해결했습니다. 
                               또한 한국어 의사소통을 위해서 꾸준하게 학습하는 노력을 보이며 한국 생활에 적용하고 있습니다. 하지만 개인의 의사와 상관없이 회사 내부적인 상황으로 부득이하게 신규 서비스 종료가 결정되어 귀사에 이스마열 대리의 채용을 추천 드립니다.
                            </p>
@@ -679,6 +684,8 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+   <script src="/js/langugage.js"></script>
 
 </body>
 
